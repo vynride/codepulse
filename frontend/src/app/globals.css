@@ -1,0 +1,172 @@
+@import "tailwindcss";
+
+/* CodePulse — tokens mapped from DESIGN.md */
+@theme {
+  --color-ink: #000000;
+  --color-body: #959494;
+  --color-hairline: #ebebeb;
+  --color-canvas: #ffffff;
+  --color-canvas-dark: #010120;
+  --color-dark-line: #26263a;
+  --color-dark-soft: #313641;
+  --color-on-dark: #ffffff;
+  --color-accent-orange: #fc4c02;
+  --color-accent-magenta: #ef2cc1;
+  --color-accent-periwinkle: #bdbbff;
+  --color-accent-mint: #c8f6f9;
+
+  --color-risk-low: #0f9e8e;
+  --color-risk-low-bg: #c8f6f9;
+  --color-risk-medium: #7b78f0;
+  --color-risk-medium-bg: #e6e5ff;
+  --color-risk-high: #e8336f;
+  --color-risk-high-bg: #fde0ea;
+
+  --font-sans: var(--font-inter), "Helvetica Neue", Arial, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, "SF Mono", Menlo, monospace;
+
+  --radius-xs: 3.25px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+
+  --text-display-xxl: 64px;
+  --text-display-xxl--line-height: 70.4px;
+  --text-display-xxl--letter-spacing: -1.92px;
+  --text-display-xl: 40px;
+  --text-display-xl--line-height: 48px;
+  --text-display-xl--letter-spacing: -0.8px;
+  --text-display-lg: 28px;
+  --text-display-lg--line-height: 32.2px;
+  --text-display-lg--letter-spacing: -0.42px;
+  --text-display-md: 22px;
+  --text-display-md--line-height: 25.3px;
+  --text-display-md--letter-spacing: -0.22px;
+  --text-body-lg: 18px;
+  --text-body-lg--line-height: 23.4px;
+  --text-body-lg--letter-spacing: -0.18px;
+  --text-body-md: 16px;
+  --text-body-md--line-height: 20.8px;
+  --text-body-md--letter-spacing: -0.16px;
+  --text-caption: 14px;
+  --text-caption--line-height: 19.6px;
+  --text-eyebrow: 11px;
+  --text-eyebrow--line-height: 15.4px;
+  --text-eyebrow--letter-spacing: 0.55px;
+}
+
+html {
+  background: #ffffff;
+}
+
+body {
+  background: #ffffff;
+  color: #000000;
+  font-family: var(--font-sans);
+  font-feature-settings: "ss01", "cv11";
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: #bdbbff;
+  color: #000;
+}
+
+@layer components {
+  .container-cp {
+    @apply mx-auto w-full max-w-[1280px] px-4 md:px-8;
+  }
+
+  .eyebrow {
+    @apply font-mono text-eyebrow font-medium uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-sm px-6 font-mono text-[14px] font-medium uppercase leading-none transition-colors duration-150 select-none;
+    letter-spacing: 0.04em;
+    min-height: 40px;
+  }
+  .btn:disabled {
+    @apply cursor-not-allowed opacity-40;
+  }
+  .btn:focus-visible {
+    @apply outline-2 outline-offset-2 outline-accent-periwinkle;
+  }
+  .btn-primary {
+    @apply bg-ink text-white hover:bg-[#1d1d2e];
+  }
+  .btn-outline {
+    @apply rounded-xs border border-black/10 bg-white text-ink hover:border-black/30;
+  }
+  .btn-mint {
+    @apply bg-accent-mint text-ink hover:bg-[#b2eef2];
+  }
+  .btn-ghost-dark {
+    @apply bg-dark-soft text-on-dark hover:bg-[#3d4350];
+  }
+  .btn-white {
+    @apply bg-white text-ink hover:bg-[#f2f2f2];
+  }
+
+  .card {
+    @apply rounded-sm border border-hairline bg-white;
+  }
+  .card-dark {
+    @apply rounded-sm border border-dark-line bg-canvas-dark text-on-dark;
+  }
+
+  .table-cp {
+    @apply w-full border-collapse text-left text-body-md;
+  }
+  .table-cp thead th {
+    @apply bg-hairline px-4 py-3 font-mono text-eyebrow font-medium whitespace-nowrap text-[#6b6a6a] uppercase;
+    letter-spacing: 0.06em;
+  }
+  .table-cp tbody td {
+    @apply border-b border-hairline px-4 py-3 align-middle;
+  }
+  .table-cp tbody tr:last-child td {
+    @apply border-b-0;
+  }
+
+  .skeleton {
+    @apply animate-pulse rounded-sm bg-hairline;
+  }
+  .skeleton-dark {
+    @apply animate-pulse rounded-sm bg-dark-soft;
+  }
+
+  .prose-cp p {
+    @apply mb-4 text-body-lg text-[#2a2a2a];
+  }
+  .prose-cp h3 {
+    @apply mt-10 mb-3 text-display-md font-medium;
+  }
+  .prose-cp ul {
+    @apply mb-4 list-disc space-y-2 pl-5 text-body-lg text-[#2a2a2a];
+  }
+  .prose-cp code {
+    @apply rounded-xs bg-hairline px-1 py-0.5 font-mono text-[0.85em];
+  }
+}
+
+/* Monaco decorations */
+.cp-line-highlight {
+  background: rgba(189, 187, 255, 0.18);
+  border-left: 2px solid #bdbbff;
+}
+.cp-line-error {
+  background: rgba(232, 51, 111, 0.18);
+}
+.cp-glyph-error {
+  background: #e8336f;
+  border-radius: 9999px;
+  width: 8px !important;
+  height: 8px !important;
+  margin-left: 6px;
+  margin-top: 6px;
+}
+
+.recharts-wrapper *:focus {
+  outline: none;
+}
