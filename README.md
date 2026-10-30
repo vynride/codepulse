@@ -4,8 +4,6 @@
   <img src="docs/readme-banner.svg" alt="CodePulse: find the Python files most likely to break next" width="100%">
 </p>
 
-**ML-based code complexity and bug-risk analysis for Python.**
-
 Paste or upload a Python file. CodePulse extracts 28 structural metrics plus TF-IDF vocabulary features, and
 scikit-learn models predict whether the file is at **Low / Medium / High** risk of needing bug fixes. The UI shows a
 0–100 risk score, per-function diagnostics against standard thresholds, the factors driving the score, and a full
