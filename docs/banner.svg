@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="400" viewBox="0 0 1280 400" role="img" aria-labelledby="t d">
+  <title id="t">CodePulse</title>
+  <desc id="d">Find the Python files most likely to break next. ML-based code complexity and bug-risk analysis for Python.</desc>
+  <defs>
+    <linearGradient id="g1" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fc4c02"/><stop offset="50%" stop-color="#ef2cc1"/><stop offset="100%" stop-color="#bdbbff"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fc4c02"/><stop offset="50%" stop-color="#ef2cc1"/><stop offset="100%" stop-color="#bdbbff"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.78" cy="0.5" r="0.45">
+      <stop offset="0%" stop-color="#ef2cc1" stop-opacity="0.16"/><stop offset="100%" stop-color="#010120" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="18"/></filter>
+    <linearGradient id="fadeGrad" gradientUnits="userSpaceOnUse" x1="700" y1="0" x2="940" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff" stop-opacity="1"/>
+    </linearGradient>
+    <mask id="fade" maskUnits="userSpaceOnUse" x="0" y="0" width="1280" height="400"><rect width="1280" height="400" fill="url(#fadeGrad)"/></mask>
+    <clipPath id="clip"><rect width="1280" height="400" rx="16"/></clipPath>
+    <style>
+      .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    </style>
+  </defs>
+  <g clip-path="url(#clip)">
+    <rect width="1280" height="400" fill="#010120"/>
+    <rect width="1280" height="400" fill="url(#glow)"/>
+    <g mask="url(#fade)">
+    <g transform="translate(700 -10) scale(1.05)">
+      <path d="M-20 330 C 90 330, 140 120, 260 150 S 420 330, 580 90" fill="none" stroke="url(#g1)" stroke-width="70" stroke-linecap="round" opacity="0.35" filter="url(#blur)"/>
+      <path d="M-20 340 C 90 330, 140 110, 260 150 S 420 330, 580 90" fill="none" stroke="url(#g2)" stroke-width="1.4" opacity="0.25"/>
+      <path d="M-20 336 C 90 323, 143 116, 260 152 S 416 321, 580 95" fill="none" stroke="url(#g1)" stroke-width="1.4" opacity="0.3"/>
+      <path d="M-20 332 C 90 316, 146 122, 260 154 S 412 312, 580 100" fill="none" stroke="url(#g2)" stroke-width="1.4" opacity="0.35"/>
+      <path d="M-20 328 C 90 309, 149 128, 260 156 S 408 303, 580 105" fill="none" stroke="url(#g1)" stroke-width="1.4" opacity="0.4"/>
+      <path d="M-20 324 C 90 302, 152 134, 260 158 S 404 294, 580 110" fill="none" stroke="url(#g2)" stroke-width="1.4" opacity="0.45"/>
+      <path d="M-20 320 C 90 295, 155 140, 260 160 S 400 285, 580 115" fill="none" stroke="url(#g1)" stroke-width="1.4" opacity="0.5"/>
+      <path d="M-20 316 C 90 288, 158 146, 260 162 S 396 276, 580 120" fill="none" stroke="url(#g2)" stroke-width="1.4" opacity="0.55"/>
+      <path d="M-20 312 C 90 281, 161 152, 260 164 S 392 267, 580 125" fill="none" stroke="url(#g1)" stroke-width="3" opacity="0.6"/>
+      <path d="M-20 308 C 90 274, 164 158, 260 166 S 388 258, 580 130" fill="none" stroke="url(#g2)" stroke-width="1.4" opacity="0.65"/>
+      <path d="M-20 304 C 90 267, 167 164, 260 168 S 384 249, 580 135" fill="none" stroke="url(#g1)" stroke-width="1.4" opacity="0.7"/>
+      <path d="M-20 300 C 90 260, 170 170, 260 170 S 380 240, 580 140" fill="none" stroke="url(#g2)" stroke-width="1.4" opacity="0.75"/>
+      <path d="M-20 296 C 90 253, 173 176, 260 172 S 376 231, 580 145" fill="none" stroke="url(#g1)" stroke-width="1.4" opacity="0.8"/>
+      <path d="M-20 292 C 90 246, 176 182, 260 174 S 372 222, 580 150" fill="none" stroke="url(#g2)" stroke-width="1.4" opacity="0.85"/>
+      <path d="M-20 288 C 90 239, 179 188, 260 176 S 368 213, 580 155" fill="none" stroke="url(#g1)" stroke-width="1.4" opacity="0.9"/>
+    </g>
+    </g>
+  </g>
+  <text x="72" y="96" class="sans" font-size="24" font-weight="600" letter-spacing="-0.3" fill="#ffffff">CodePulse</text>
+  <text x="72" y="196" class="sans" font-size="48" font-weight="500" letter-spacing="-1.3" fill="#ffffff">Find the Python files</text>
+  <text x="72" y="252" class="sans" font-size="48" font-weight="500" letter-spacing="-1.3" fill="#ffffff">most likely to break next</text>
+  <text x="72" y="304" class="sans" font-size="18" fill="#a9a9c4">ML-based code complexity and bug-risk analysis for Python.</text>
+</svg>
