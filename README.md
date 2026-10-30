@@ -1,7 +1,7 @@
 # CodePulse
 
 <p align="center">
-  <img src="docs/banner.svg" alt="CodePulse: find the Python files most likely to break next" width="100%">
+  <img src="docs/readme-banner.svg" alt="CodePulse: find the Python files most likely to break next" width="100%">
 </p>
 
 **ML-based code complexity and bug-risk analysis for Python.**
