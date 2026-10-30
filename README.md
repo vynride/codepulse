@@ -2,6 +2,8 @@
   <img src="docs/banner.svg" alt="CodePulse: find the Python files most likely to break next" width="100%">
 </p>
 
+# CodePulse
+
 **ML-based code complexity and bug-risk analysis for Python.**
 
 Paste or upload a Python file. CodePulse extracts 28 structural metrics plus TF-IDF vocabulary features, and
